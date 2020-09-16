@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study 1</title>
+  <script src="tab_menu.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .title {
+      /* margin: 0 auto; */
+      text-align: center;
+      padding: 5vh 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .btn_tab {
+      background-color: royalblue;
+      padding: 2.5vh 4vw;
+      color: #f5f5f5;
+      font-size: 1.5rem;
+    }
+
+    .btn_tab:hover {
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: coral;
+      color: royalblue;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="title">메뉴바_탭 버튼 만들기</h1>
+  </header>
+  <nav class="tab_Wrap">
+    <div class="btn_tab">Menu1</div>
+    <div class="btn_tab">Menu2</div>
+    <div class="btn_tab">Menu3</div>
+    <div class="btn_tab">Menu4</div>
+    <div class="btn_tab">Menu5</div>
+  </nav>
+</body>
+
+</html>
