@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <link rel="stylesheet" href="P_style.css"> -->
+  <link rel="stylesheet" href="piano_v2.css">
+  <link rel="stylesheet" href="reset_meyer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+  <header>
+    <h1>P I A N O</h1>
+  </header>
+  <div class="piano">
+    <div class="white">
+      <div class="piece">C</div>
+      <div class="piece">D</div>
+      <div class="piece">E</div>
+      <div class="piece">F</div>
+      <div class="piece">G</div>
+      <div class="piece">A</div>
+      <div class="piece">B</div>
+      <div class="piece">C</div>
+      <div class="piece">D</div>
+      <div class="piece">E</div>
+      <div class="piece">F</div>
+      <div class="piece">G</div>
+      <div class="piece">A</div>
+      <div class="piece">B</div>
+      <div class="piece">C</div>
+      <div class="piece">D</div>
+      <div class="piece">E</div>
+      <div class="piece">F</div>
+      <div class="piece">G</div>
+      <div class="piece">A</div>
+      <div class="piece">B</div>
+      <div class="piece">C</div>
+    </div>
+    <div class="black">
+      <div class="piece">D♭/C#</div>
+      <div class="piece">E♭/D#</div>
+      <div class="piece none">EF</div>
+      <div class="piece">G♭/F#</div>
+      <div class="piece">A♭/G#</div>
+      <div class="piece">B♭/A#</div>
+      <div class="piece none">BC</div>
+      <div class="piece">D♭/C#</div>
+      <div class="piece">E♭/D#</div>
+      <div class="piece none">EF</div>
+      <div class="piece">G♭/F#</div>
+      <div class="piece">A♭/G#</div>
+      <div class="piece">B♭/A#</div>
+      <div class="piece none">BC</div>
+      <div class="piece">D♭/C#</div>
+      <div class="piece">E♭/D#</div>
+      <div class="piece none">EF</div>
+      <div class="piece">G♭/F#</div>
+      <div class="piece">A♭/G#</div>
+      <div class="piece">B♭/A#</div>
+      <div class="piece none">BC</div>
+      <div class="piece">D♭/C#</div>
+      <!-- <div class="piece">E♭/D#</div> -->
+    </div>
+  </div>
+  <script type="text/javascript">
+    var keyboard = document.querySelectorAll('.piece');
+
+    for (i = 0; i < keyboard.length; i++) {
+      keyboard[i].addEventListener('click', soundAlert);
+    }
+
+    function soundAlert() {
+      if (confirm('어라, 소리가 안 들리시나요?')) {
+        alert('그게 정상입니다.');
+      } else {
+        alert('뻥치시네.')
+      }
+    };
+  </script>
+</body>
+
+</html>
